@@ -1,0 +1,199 @@
+{
+  "version": 1.0,
+  "title": "Assignment 4: Conditionals, if statements, and Scope",
+  "quiz": [
+    {
+      "question": "What is the final value of `total_rainfall`?\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n  int total_rainfall = 0;\n  bool is_raining = true;\n  if (is_raining) {\n    total_rainfall = total_rainfall + 1;\n  }\n  cout << \"The total rainfall is \" << total_rainfall;\n}\n```",
+      "options": [
+        {
+          "value": "0",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "1",
+          "answer": true,
+          "explanation": "Correct! Since `is_raining` is `true`, the code in the `if` block will run."
+        },
+        {
+          "value": "4",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "Invalid the code would not run",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the final value of `total_rainfall_us_no_wa`?\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n  int total_rainfall_us_no_wa = 0;\n  int avg_rainfall_us_inches = 31\n  {\n    int avg_rainfall_wa_inches = 8;\n  }\n  total_rainfall_us_no_wa = avg_rainfall_us_inches - avg_rainfall_wa_inches;\n}\n```",
+      "options": [
+        {
+          "value": "0",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "31",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "23",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "Invalid, the code would not run.",
+          "answer": true,
+          "explanation": "Correct! The variable `avg_rainfall_wa_inches` is out of scope by the final line and therefore cannot be used."
+        }
+      ]
+    },
+    {
+      "question": "What will be printed out to the console?\n```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n  string lettuce = \"Romaine lettuce\";\n  string dressing = \"Caesar\";\n  bool add_parmesan = false;\n  bool is_caesar_salad = true;\n\n  cout << \"Add \" << lettuce << \". \";\n  if (is_caesar_salad) {\n    cout << \"Mix in \" << dressing << \" dressing. \";\n  }\n\n  if (add_parmesan) {\n    cout << \"Sprinkle in some Parmesan.\";\n  }\n  cout << endl;\n}\n```",
+      "options": [
+        {
+          "value": "Add Romaine lettuce.",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "Add Romaine lettuce. Mix in Caesar dressing.",
+          "answer": true,
+          "explanation": ""
+        },
+        {
+          "value": "Add Romaine lettuce. Sprinkle in some Parmesan.",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "Add Romaine lettuce. Mix in Caesar dressing. Sprinkle in some Parmeasan.",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "What is the size of a `bool` type in bytes?",
+      "options": [
+        {
+          "value": ".5",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "1",
+          "answer": true,
+          "explanation": "Correct! A `bool` is only one byte."
+        },
+        {
+          "value": "2",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "4",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "fix_code": [
+    {
+      "question": "This code isn't formatted correctly! Can you help fix it?",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "No spaces around the equals or other comparators."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't formatted correctly! Can you help fix it?",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "Code indentation is very important for readability."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "`if`, like all elements in C++, is case-sensitive."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 9,
+          "hint": "No closing `}` to an `if` statement."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 8,
+          "hint": "No curly braces `{}` around the operations of an `if` statement."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 12,
+          "hint": "Accessing variable `last_name` out of scope."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "`=` is used for assignment, but `==` for comparison."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": 9,
+          "hint": "Use a `<` instead of `<=`."
+        },
+        {
+          "line_number": 12,
+          "hint": "Use a `>` instead of `>=`."
+        }
+      ]
+    }
+  ],
+  "invent_code": [
+    {
+      "question": "Often times you'll need to modify code that already exists.\n\n### Part 1\nOnly ask the user for the price of a produce if their recipe requires it.\n\nFor example, if the user says they want 0 avocados, the user shouldn't have to enter in the price per avocado as it won't affect the final output.\n\n### Part 2\nAdditionally account for onions in this cost calculator.",
+      "hints": []
+    },
+    {
+      "question": "### Part 1\nLet's build a fancier integer calculator! This time your calculator should ask for 2 numbers from the user and one operator. The operator could be `+`, `-`, `*`, `/` or `%`. The program should then print out result. To get you started, we've left off some sample code, though it might have some bugs!\n\nIn case you are unfamiliar with the `%` operator, check out some practice problems on [Khan Academy](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic).\n\nExample: If the user enters `3`, `*`, and `14`, the program should print out `3 * 14 = 42`.\n\nExample: If the user enters `15`, `/`, and `4`, the program should print out `15 / 4 = 3`. (Remember this is integer division!)\n\nAn example output to the console may be:\n\n```\nEnter a number: 3\nEnter an operator: *\nEnter a number: 4\n3 * 4 = 12\n```\n\n\n### Part 2\nNow that you've got your two number calculator working, lets upgrade it to a calculator that takes in 3 numbers and 2 operators!\n\nAn example output to the console may be:\n\n```\nEnter a number: 3\nEnter an operator: *\nEnter a number: 4\n3 * 4 = 12\nEnter an operator: +\nEnter a number: 19\n12 + 19 = 31\n```\n\n### Part 3\nNow that you've got your three number calculator working, lets upgrade it to a calculator that takes in 4 numbers and 3 operators!\n\nAn example output to the console may be:\n\n```\nEnter a number: 3\nEnter an operator: *\nEnter a number: 4\n3 * 4 = 12\nEnter an operator: +\nEnter a number: 19\n12 + 19 = 31\nEnter an operator: %\nEnter a number: 7\n31 % 7 = 3\n```",
+      "hints": [
+        {
+          "line_number": -1,
+          "hint": "What type is best for representing the operator? Remember, all the operators are a single key on your keyboard!"
+        }
+      ]
+    }
+  ]
+}
