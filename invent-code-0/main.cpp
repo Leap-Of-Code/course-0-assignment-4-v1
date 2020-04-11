@@ -3,16 +3,12 @@
 using namespace std;
 
 int main() {
-    float price_per_avocado;
-    float price_per_tomato;
-    float num_avocados;
-    float num_tomatoes;
-
-    cout << "Price of an avocado: ";
-    cin >> price_per_avocado;
-
-    cout << "Price of a tomato: ";
-    cin >> price_per_tomato;
+    float price_per_avocado = 0;
+    float price_per_tomato = 0;
+    float price_per_onion = 0;
+    float num_avocados = 0;
+    float num_tomatoes = 0;
+    float num_onions = 0;
 
     cout << "How many avocados are in your recipe: ";
     cin >> num_avocados;
@@ -20,6 +16,25 @@ int main() {
     cout << "How many tomatoes are in your recipe: ";
     cin >> num_tomatoes;
 
-    float total_cost = num_avocados * price_avocado + num_tomatoes * price_tomato;
-    cout << "The total cost of the recipe will be: " << total_cost << endl;
+    cout << "How many onions are in your recipe: ";
+    cin >> num_onions;
+
+    if (num_onions > 0) {
+    cout << "Price of an onion: ";
+    cin >> price_per_onion;
+    }
+    
+    if (num_avocados > 0) {
+    cout << "Price of an avocado: ";
+    cin >> price_per_avocado;
+    }
+
+    if (num_tomatoes > 0) {
+    cout << "Price of a tomato: ";
+    cin >> price_per_tomato;
+    }
+
+    const float total_cost = ((num_avocados * price_per_avocado) + (num_tomatoes * price_per_tomato) + (num_onions * price_per_onion));
+    cout << "The total cost of the recipe will be: $" << total_cost << endl;
+
 }
