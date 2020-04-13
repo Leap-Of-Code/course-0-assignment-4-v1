@@ -9,3 +9,4 @@ int main() {
   if (weight_of_boat < max_scale_weight ) {
     cout << "The boat can be weighed.";
 }
+}
