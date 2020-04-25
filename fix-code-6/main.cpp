@@ -14,9 +14,9 @@ int main() {
     num_mice = num_mice - 1;
   }
 
-  if (num_mice > num_cats) {
+  if (num_mice >= num_cats) {
     // If there are as many mice as cats left over, the cat population increases by 1.
-    num_cats == num_cats + 1;
+    num_cats = num_cats + 1;
   }
-  cout << The number of mice left is: " << num_mice;
+  cout << "The number of mice left is: " << num_mice;
 }
