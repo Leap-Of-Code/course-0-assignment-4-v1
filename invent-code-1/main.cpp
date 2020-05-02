@@ -16,19 +16,19 @@ int main() {
   cin >> op;
 
   if (op == "+"){
-    const int sum = first + second;
-    cout << "The sum is: " << sum << endl;
+    const int total1 = first + second;
+    cout << "The sum is: " << total1 << endl;
   }
   if (op == "*"){
-    const int product = first * second;
-    cout << "The product is: " << product << endl;
+    const int total1 = first * second;
+    cout << "The product is: " << total1 << endl;
   }
   if (op == "/"){
-    const int quotient = first / second;
-    cout << "The quotient is: " << quotient << endl;
+    const int total1 = first / second;
+    cout << "The quotient is: " << total1 << endl;
   }
   if (op == "-"){
-    const int difference = first - second;
-    cout << "The difference is: "<< difference << endl;
+    const int total1 = first - second;
+    cout << "The difference is: "<< total1 << endl;
   }
 }
