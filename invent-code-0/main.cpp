@@ -20,6 +20,6 @@ int main() {
     cout << "How many tomatoes are in your recipe: ";
     cin >> num_tomatoes;
 
-    float total_cost = num_avocados * price_avocado + num_tomatoes * price_tomato;
+    float total_cost = num_avocados * price_per_avocado + num_tomatoes * price_per_tomato;
     cout << "The total cost of the recipe will be: " << total_cost << endl;
 }
