@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  const int number_from_user = 0;
+   int number_from_user = 0;
   cin >> number_from_user;
 
   if (number_from_user <= 0) {
