@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
   int num_cats = 0;
-  cout << "How many cats are there: ";
+  cout << "Enter the number of cats :";
   cin >> num_cats;
 
   int num_mice = 5;
