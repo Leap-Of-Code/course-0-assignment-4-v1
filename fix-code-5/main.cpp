@@ -9,6 +9,5 @@ int main() {
   if (add_last_name) {
     last_name = "Smith";
   }
-
   cout << first_name << " " << last_name;
 }

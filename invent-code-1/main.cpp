@@ -8,7 +8,7 @@ int main() {
   cin >> first;
 
   cout << "Enter a number: ";
-   int second;
+  int second;
   cin >> second;
 
   const int sum = first + second;
