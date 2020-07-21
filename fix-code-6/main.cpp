@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
   int num_cats = 0;
-  cout << "How many cats are there: ";
+  cout << "Enter the number of cats :";
   cin >> num_cats;
 
   int num_mice = 5;
@@ -16,7 +16,7 @@ int main() {
 
   if (num_mice > num_cats) {
     // If there are as many mice as cats left over, the cat population increases by 1.
-    num_cats == num_cats + 1;
+    num_cats = num_cats + 1;
   }
-  cout << The number of mice left is: " << num_mice;
+  cout << "The number of mice left is: " << num_mice;
 }
