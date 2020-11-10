@@ -3,11 +3,13 @@
 using namespace std;
 
 int main() {
-  const string first_name = "John";
+  string first_name = "John";
+  string last_name;
   bool add_last_name = true;
-  if (add_last_name) {
-    string last_name = "Smith";
-  }
 
+  if (add_last_name) {
+    last_name = "Smith";
+  }
   cout << first_name << " " << last_name;
+
 }
