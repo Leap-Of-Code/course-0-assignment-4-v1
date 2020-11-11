@@ -3,11 +3,7 @@
 using namespace std;
 
 int main() {
-  int operation = 0;
-  cout << "How many calculations would you like to do? ";
-  cin >> operation;
 
-  while (operation < 4) {
   cout << "Enter a number: ";
   int first;
   cin >> first;
@@ -40,7 +36,5 @@ int main() {
   }
   else {
     cout << first << " % " << second << " = " << modulo_numbers << endl;
-  }
-  operation++;
   }
 }
